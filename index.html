@@ -1,268 +1,471 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="My Portfolio | Frontend Developer">
+    <meta name="description" content="My Portfolio | Frontend Developer" />
 
     <title>My Portfolio | Frontend Developer</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- sidebar -->
-     <aside class="sidebar">
-
-    
-     <!-- profile-section -->
-     <div class=" profile">
-
+    <aside class="sidebar">
+      <!-- profile-section -->
+      <div class="profile">
         <div class="profile-image">
-            <span>M.A.B</span>
+          <span>M.A.B</span>
         </div>
 
-        <h2> Manzi Alex </h2>
+        <h2>Manzi Alex</h2>
         <p>Frontend Developer</p>
+      </div>
 
-     </div>
+      <!-- navigation -->
+      <nav class="navigation">
+        <a href="#home" class="nav-link active">
+          <span class="icon">🏠</span>
+          Home
+        </a>
 
-     <!-- navigation -->
-        <nav class="navigation">
-                    <a href="#home" class="nav-link active">
-                        <span class="icon">🏠</span>
-                        Home
-                    </a>              
-    
-                    <a href="#about" class="nav-link">
-                        <span class="icon">👨‍💻</span>
-                        About
-                    </a>              
-    
-                    <a href="#skills" class="nav-link">
-                        <span class="icon">🛠️</span>
-                        Skills
-                    </a>            
-    
-                   <a href="#projects" class="nav-link">
-                        <span class="icon">📁</span>
-                        Projects
-                    </a>  
+        <a href="#about" class="nav-link">
+          <span class="icon">👨‍💻</span>
+          About
+        </a>
 
-                   <a href="#experience" class="nav-link">
-                        <span class="icon">💼</span>
-                        Experience  
-                   </a>
-             
-                    <a href="#contact" class="nav-link">
-                        <span class="icon">📞</span>
-                        Contact
-                    </a>
-        </nav>
+        <a href="#skills" class="nav-link">
+          <span class="icon">🛠️</span>
+          Skills
+        </a>
 
-        <!-- social links -->
+        <a href="#projects" class="nav-link">
+          <span class="icon">📁</span>
+          Projects
+        </a>
 
-        <div class="social-links">
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">WhatsAPP</a>
+        <a href="#experience" class="nav-link">
+          <span class="icon">💼</span>
+          Experience
+        </a>
+
+        <a href="#contact" class="nav-link">
+          <span class="icon">📞</span>
+          Contact
+        </a>
+      </nav>
+
+      <!-- social links -->
+
+      <div class="social-links">
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">WhatsAPP</a>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>© 2024 Manzi Alex. All rights reserved.</p>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- Home section -->
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <div class="availability">
+            <span class="status-dot"></span>
+            Available for Opportunities
+          </div>
+
+          <p class="intro-label">HELLO, I'M MANZI ALEX</p>
+          <h1>
+            I build
+            <span>digital experiences</span>
+            that make a difference.
+          </h1>
+
+          <p class="hero-description">
+            I'm a passionate frontend developer interested in creating
+            beautiful, functional and user-friendlywebsites. I enjoy turning
+            ideas into digital experiences through technology and creativity.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary"> Explore My Work → </a>
+            <a href="#contact" class="btn btn-secondary"> Get In Touch </a>
+          </div>
+
+          <!-- technologies -->
+          <div class="tech-stack">
+            <p>TECHNOLOGIES I WORK WITH</p>
+            <div class="tech-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Node.js</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Footer -->
-        <div class="footer">
-            <p>© 2024 Manzi Alex. All rights reserved.</p>
+        <!-- visual profile -->
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="visual-top">
+              <span>MY PROFILE</span>
+              <span class="online-dot"></span>
+            </div>
+            <div class="hero-avatar">M.A.B</div>
+            <h3>Manzi Alex</h3>
+            <p>Frontend Developer</p>
+
+            <div class="visual-divider"></div>
+
+            <div class="visual-info">
+              <span>Location</span>
+              <strong>Uganda</strong>
+            </div>
+
+            <div class="visual-info">
+              <span>Focus</span>
+              <strong>Web Development</strong>
+            </div>
+
+            <div class="visual-info">
+              <span>Interest</span>
+              <strong>UI/UX & Technology</strong>
+            </div>
+          </div>
         </div>
 
-     </aside>
+        <div class="floating-tag">&lt;/&gt; Building with code</div>
+      </section>
 
-     <!-- MAIN CONTENT -->
-      <main class="main-content">
-       
-        <!-- Home section -->
-         <section id="home" class="hero-section">
-            
-            <div class="hero-content">
+      <!-- About section -->
+      <section id="about" class="about-section">
+        <div class="section-heading">
+          <p class="section-label">GET TO KNOW ME</p>
+          <h2>About <span>Me</span></h2>
+        </div>
 
-                <div class="availability">
-                    <span class="status-dot"></span>
-                    Available for Opportunities
-                </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>A little about my journey</h3>
+            <p>
+              I'm a Computer Science student with an interest in building
+              practical digital solutions through technology and creativity.
+            </p>
+            <p>
+              I enjoy frontend development, designing user-friendly interfaces,
+              and exploring new technologies to enhance my skills. My goal is to
+              create impactful digital experiences that make a difference.
+            </p>
+            <p>
+              I'm continuously learning and growing as a developer, and I'm
+              excited to contribute my skills to meaningful projects.
+            </p>
+          </div>
 
-                <p class="intro-label">HELLO, I'M MANZI ALEX</p>
-                <h1>
-                    I build
-                    <span>digital experiences</span>
-                    that make a difference.
-                </h1>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <h3>01</h3>
+              <p>Computer Science Background</p>
+            </div>
+            <div class="highlight-card">
+              <h3>02</h3>
+              <p>Frontend Development Skills</p>
+            </div>
+            <div class="highlight-card">
+              <h3>03</h3>
+              <p>UI Design & creativity</p>
+            </div>
+            <div class="highlight-card">
+              <h3>04</h3>
+              <p>Continous Learning</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <p class="hero-description">
-                    I'm a passionate frontend developer interested
-                    in creating beautiful, functional and user-friendlywebsites.
-                    I enjoy turning ideas into digital experiences through technology and creativity.
-                </p>
+      <!-- skills section -->
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        Explore My Work
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        Get In Touch
-                    </a>
-                </div>
+      <section id="skills" class="skills-section">
+        <div class="section-heading">
+          <p class="section-label">WHAT I WORK WITH</p>
+          <h2>My <span>Skills</span></h2>
+          <p class="skills-intro">
+            Technologies and tools I use to build digital experiences and solve
+            problems.
+          </p>
+        </div>
 
-                <!-- technologies -->
-                <div class="tech-stack">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend Development</h3>
+            <p>Building responsive and interactive websites</p>
 
-                    <p>TECHNOLOGIES I WORK WITH</p>
-                    <div class="tech-list">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                    </div>
-                </div>
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Tools & Platforms</h3>
+            <p>Tools I use during development and collaboration</p>
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+              <span>Figma</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3>Technical Interests</h3>
+            <p>
+              Areas I'm passionate about and continuously exploring to expand my
+              technical abilities.
+            </p>
+            <div class="skill-tags">
+              <span>Performance Optimization</span>
+              <span>Accessibility</span>
+              <span>Testing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- projects section -->
+
+      <section id="projects" class="projects-section">
+        <div class="section-heading">
+          <p class="section-label">MY RECENT WORK</p>
+          <p class="projects-intro">
+            A selection pf projects I've worked on, explored and developed.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <span>01</span>
+            </div>
+            <div class="project-details">
+              <p class="project-category">E-COMMERCE</p>
+              <h3>Perfume Delivery App</h3>
+              <p>
+                An e-commerce application designed to help customers explore
+                perfumes and place delivery orders.
+              </p>
+
+              <div class="project-tech">
+                <span>React</span>
+                <span>Vite</span>
+                <span>CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <span>02</span>
+            </div>
+            <div class="project-details">
+              <p class="project-category">EDUCATION</p>
+              <h3>Learnlito Course Search</h3>
+              <p>
+                A course discovery interface featuring search,filtering and
+                pagination for learning resources.
+              </p>
+
+              <div class="project-tech">
+                <span>React</span>
+                <span>Mantime</span>
+                <span>React Query</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <span>03</span>
+            </div>
+            <div class="project-details">
+              <p class="project-category">BUSINESS MANAGEMENT</p>
+              <h3>BizFlow</h3>
+              <p>
+                A retail management project focused on helping small shops track
+                inventory and daily sales.
+              </p>
+
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="experience-section">
+        <div class="section-heading">
+          <p class="section-label">MY BACKGROUND</p>
+          <h2>Experience & <span>Education</span></h2>
+          <p class="experience-intro">
+            My academic journey and practical experiences that have shaped my
+            technology career
+          </p>
+        </div>
+
+        <!-- experience -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">INTERNSHIP</span>
+            <h3>Frontend Developer Intern</h3>
+            <h4>Crane Cloud</h4>
+            <p>
+              Gained practical experience in frontend development, working with
+              web technologies and contributing to development tasks.
+            </p>
+
+            <div class="timeline-tags">
+              <span>Frontend Development</span>
+              <span>Web Technologies</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- education -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">EDUCATION</span>
+            <h3>Diploma in Computer Science</h3>
+            <h4>international Uviversity of E.A</h4>
+            <p>
+              Developed a foundation in computer science, programming, software
+              development and information technology.
+            </p>
+
+            <div class="timeline-tags">
+              <span>Computer Science</span>
+              <span>Programming</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+
+      <section id="contact" class="contact-section">
+        <div class="section-heading">
+          <p class="section-label">LET'S CONNECT</p>
+          <h2>Get In <span>Touch</span></h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Have a project in mind?</h3>
+            <p>
+              I'm always interested in discussing new opportunities, creative
+              projects and ways technology can solve real-world problems.
+            </p>
+
+            <div class="contact-detail">
+              <span>Email</span>
+              <a href="mailto:your.email@example.com">
+                your.email@example.com
+              </a>
             </div>
 
-            <!-- visual profile -->
-             <div class="hero-visual">
-                <div class="visual-card">
-                    <div class="visual-top">
-                        <span>MY PROFILE</span>
-                        <span class="online-dot"></span>
-                    </div>
-                    <div class="hero-avatar">
-                        M.A.B 
-                    </div>
-                    <h3>Manzi Alex</h3>
-                    <p>Frontend Developer</p>
-
-                    <div class="visual-divider"></div>
-
-                    <div class="visual-info">
-                        <span>Location</span>
-                        <strong>Uganda</strong>
-                    </div>
-
-                    <div class="visual-info">
-                        <span>Focus</span>
-                        <strong>Web Development</strong>
-                    </div>
-
-                    <div class="visual-info">
-                        <span>Interest</span>
-                        <strong>UI/UX & Technology</strong>
-                    </div>
-                </div>
-             </div>
-
-             <div class="floating-tag">
-                &lt;/&gt; Building with code
-             </div>
-        </section>
-
-        <!-- About section -->
-         <section id="about" class="about-section">
-            
-            <div class="section-heading">
-                <p class="section-label">GET TO KNOW ME</p>
-                <h2>About <span>Me</span></h2>
+            <div class="contact-detail">
+              <span>Location</span>
+              <p>Uganda</p>
             </div>
 
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>A little about my journey</h3>
-                    <p>
-                        I'm a Computer Science student with an interest
-                        in building practical digital solutions through
-                        technology and creativity.
-                    </p>
-                    <p>
-                        I enjoy frontend development, designing user-friendly interfaces,
-                        and exploring new technologies to enhance my skills.
-                        My goal is to create impactful digital experiences that make a difference.
-                    </p>
-                    <p>
-                        I'm continuously learning and growing as a developer, and I'm excited to 
-                        contribute my skills to meaningful projects.
-                    </p>
-                </div>
+            <div class="contact-detail">
+              <span>Social Profiles</span>
+              <div class="contact-socials">
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub ↗</a
+                >
 
-                <div class="about-highlights">
-                    <div class="highlight-card">
-                        <h3>01</h3>
-                        <p>Computer Science Background</p>
-                    </div>
-                    <div class="highlight-card">
-                        <h3>02</h3>
-                        <p>Frontend Development Skills</p>
-                    </div>
-                    <div class="highlight-card">
-                        <h3>03</h3>
-                        <p>UI Design & creativity</p>
-                    </div>
-                    <div class="highlight-card">
-                        <h3>04</h3>
-                        <p>Continous Learning</p>
-                    </div>
-
-                </div>
+                <a
+                  href="https://linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn ↗</a
+                >
+              </div>
             </div>
-         </section>
+          </div>
 
-         <!-- skills section -->
-
-         <section id="skills" class="skills-section">
-            <div class="section-heading">
-                <p class="section-label">WHAT I WORK WITH</p>
-                <h2>My <span>Skills</span></h2>
-                <p class="skills-intro">
-                    Technologies and tools I use to build digital experiences
-                    and solve problems.
-                </p>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
             </div>
 
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Frontend Development</h3>
-                    <p>Building responsive and interactive websites</p>
-
-                    <div class="skill-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>React</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Tools & Platforms</h3>
-                    <p>Tools I use during development and collaboration</p>
-                    <div class="skill-tags">
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>VS Code</span>
-                        <span>Figma</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Technical Interests</h3>
-                    <p>Areas I'm passionate about and continuously exploring to expand my 
-                        technical abilities.
-                    </p>
-                    <div class="skill-tags">
-                        <span>Performance Optimization</span>
-                        <span>Accessibility</span>
-                        <span>Testing</span>
-                    </div>
-                </div>
-
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
             </div>
 
-         </section>
-      </main>
-    
-</body>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Send Message →
+            </button>
+
+            <p id="formStatus" class="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
