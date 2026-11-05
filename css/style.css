@@ -469,3 +469,84 @@ html {
         margin-top: 60px;
     }
 }
+
+/* SKILLS SECTION */
+
+.skills-section {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding:40px 0;
+}
+
+.skills-intro {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 15px;
+    max-width: 550px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.skill-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    padding: 28px;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #10b981;
+}
+
+.skill-card h3 {
+    color: #f8fafc;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tags span {
+    background: #1e293b;
+    color: #10b981;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE SKILLS SECTION */
+
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-section {
+        margin-top: 60px;
+    }
+}
