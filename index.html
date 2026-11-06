@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
     <!-- sidebar -->
@@ -70,9 +71,13 @@
         <p>© 2024 Manzi Alex. All rights reserved.</p>
       </div>
     </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" >
+            <i class="bi bi-list"></i>
+        </button>
       <!-- Home section -->
       <section id="home" class="hero-section">
         <div class="hero-content">
@@ -397,8 +402,8 @@
 
             <div class="contact-detail">
               <span>Email</span>
-              <a href="mailto:your.email@example.com">
-                your.email@example.com
+              <a href="mailto:alexbagabe@gmail.com.com">
+                alexbagabe@gmail.com
               </a>
             </div>
 
@@ -462,7 +467,7 @@
               Send Message →
             </button>
 
-            <p id="formStatus" class="form-status"></p>
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
