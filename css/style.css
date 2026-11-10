@@ -346,7 +346,7 @@ html {
 /* Floating tag */
 
 .floating-tag {
-  display:block;
+  display: block;
   position: absolute;
   bottom: 50px;
   right: 135px;
@@ -359,14 +359,13 @@ html {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 768px) {
-  .hero-visual{
+  .hero-visual {
     display: none;
   }
-  .floating-tag{
+  .floating-tag {
     display: none;
   }
 }
-
 
 /* Mobile view button */
 .menu-toggle {
@@ -549,7 +548,27 @@ html {
   transform: translateY(-6px);
   border-color: #10b981;
 }
+.like-btn {
+  margin-top: -6px;
+  padding: 3px 6px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+.like-btn:hover {
+  background: #f5f5f5;
+}
+
+.like-btn.liked {
+  color: red;
+  border-color: red;
+}
+
+.like-btn.liked i {
+  color: red;
+}
 .project-image {
   height: 170px;
   background: linear-gradient(135deg, #1e293b, #064e3b);
@@ -557,7 +576,7 @@ html {
   align-items: center;
   justify-content: center;
 }
-.project-image img{
+.project-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;

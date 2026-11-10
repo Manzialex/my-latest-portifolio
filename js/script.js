@@ -130,3 +130,38 @@ revealElements.forEach(function (element) {
   element.classList.add("reveal");
   revealObserver.observe(element);
 });
+
+// Select all Like buttons on the page
+const likeButtons = document.querySelectorAll(".like-btn");
+
+for (let i = 0; i < likeButtons.length; i++) {
+  let likes = 0;
+  const button = likeButtons[i];
+
+  button.addEventListener("click", function () {
+    likes++;
+
+    // Select the heart icon and count display
+    const icon = button.querySelector("i");
+    const count = button.querySelector(".like-count");
+    const label = button.querySelector(".like-label");
+
+    count.textContent = likes;
+
+    // Conditional statement to update the heart
+    if (likes > 0) {
+      icon.classList.replace("bi-heart", "bi-heart-fill");
+      button.classList.add("liked");
+    } else {
+      icon.classList.replace("bi-heart-fill", "bi-heart");
+      button.classList.remove("liked");
+    }
+
+    // Display the correct word depending on the count
+    if (likes === 1) {
+      label.textContent = "Like";
+    } else {
+      label.textContent = "Likes";
+    }
+  });
+}
